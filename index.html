@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: #0A0A23;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 550px;
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+        
+        .container img{
+            height: 100px;
+            /* border: 1px solid red; */
+            width: 50%;
+        }
+
+        .container h1{
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        .text-container{
+            max-height: 200px;
+            width: 400px;
+            margin: auto;
+            /* border: 1px solid red; */
+            text-align: center;
+            background: #fff;
+            color: #000;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px #012A9F;
+            padding: 10px;
+        }
+
+        .text-container p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .text-container #text-input{
+            border: 0;
+            outline:0;
+            width: 250px;
+            margin-left: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #5A01A7;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .text-container #check-btn{
+            width: 80px;
+            padding: 8px;
+            background: #5A01A7;
+            color: #fff;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .text-container #result{
+            margin:30px 0 20px 0
+        }
+
+        .final-container{
+            height: 150px;
+            width: 400px;
+            padding: 0 5px;
+            background: #00471B;
+            margin: 30px auto;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .final-container p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Is it a Palindrome?</h1>
+        <div class="text-container">
+            <p>Enter in text to check for a palindrome:</p>
+            <input type="number" id="text-input">
+            <button type="submit" id="check-btn">Check</button>
+            <div id="result"></div>
+        </div>
+
+        <div class="final-container">
+            <p> 💡 A <i>palindrome</i> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
